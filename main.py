@@ -42,9 +42,9 @@ def main(page: ft.Page):
 
     text_button = ft.TextButton(text='send', on_click=on_button_click, icon=ft.Icons.SEND)
 
-    icon_button = ft.IconButton(icon=ft.Icons.BRIGHTNESS_6, on_click=toggle_theme)
+    icon_button = ft.IconButton(icon=ft.Icons.BRIGHTNESS_7, on_click=toggle_theme)
 
     # page.add(greeting_text, name_input, text_button, elevated_button, icon_button)
 
-    page.add(greeting_text, ft.Row([name_input, elevated_button]), history_text)
+    page.add(greeting_text, ft.Row([name_input, elevated_button, icon_button]), history_text)
 ft.app(target=main)
